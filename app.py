@@ -65,8 +65,6 @@ def delete_event(event_id):
         return jsonify({"error": f"Event with id {event_id} not found"}), 404
 
     events.remove(event)
-
-    # 204 No Content - successful deletion, no body to return
     return "", 204
 
 
